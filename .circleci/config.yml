@@ -73,7 +73,6 @@ jobs:
             FULL_VER="${base_ver}-${CIRCLE_BUILD_NUM}.ci.${commit_rev}"
             echo "export FULL_VER='$FULL_VER'" >> $BASH_ENV
             cd ..
-
       - run:
           name: Build unsigned ZIP package for Chromium
           command: |
@@ -82,7 +81,6 @@ jobs:
             dest_file="packages/SwitchyOmega_${FULL_VER}_Chromium_UNSIGNED.zip"
             mv release.zip "$dest_file"
             cd ..
-
       - run: (cd omega-target-chromium-extension && web-ext -s build lint)
 
       - run:
