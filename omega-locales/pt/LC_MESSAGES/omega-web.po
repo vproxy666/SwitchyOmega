@@ -16,7 +16,7 @@ msgstr ""
 
 #, fuzzy
 msgid "appNameShort"
-msgstr "SwitchyOmega"
+msgstr "SwitchyOmega for VProxy"
 
 msgid "manifest_app_name"
 msgstr ""
